@@ -2,12 +2,14 @@
 import About from './about.vue'
 import Skill from './skill.vue'
 import Resume from './resume.vue'
+import Profolio from './portfolio.vue'
 </script>
 <template>
     <main id="main">
         <About></About>
         <Skill></Skill>
         <Resume></Resume>
+        <Profolio></Profolio>
     </main>
 </template>
 
