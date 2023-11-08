@@ -51,7 +51,7 @@ onMounted(() => {
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../assets/img/T1.png") no-repeat center;
+    background: url("../assets/img/img1.jpg") no-repeat center;
     background-size: cover;
 }
 
