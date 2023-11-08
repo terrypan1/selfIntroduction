@@ -14,7 +14,7 @@ const setActive = (link) => {
                     style="object-fit: cover;">
                 <h1 class="text-light"><a href="index.html">Terry Pan</a></h1>
                 <div class="social-links mt-3 text-center">
-                    <a href="https://github.com/terrypan1/selfIntroduction" class="twitter"><i class="bi bi-github"></i></a>
+                    <a href="https://github.com/terrypan1" class="twitter"><i class="bi bi-github"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
