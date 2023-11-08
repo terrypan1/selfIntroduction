@@ -27,7 +27,7 @@ const setActive = (link) => {
                     <li><a href="#about" class="nav-link scrollto" @click="setActive('about')" :class="{active:activeLink == 'about'}"><i class="bi bi-person-circle"></i><span>About</span></a>
                     </li>
                     <li><a href="#resume" class="nav-link scrollto" @click="setActive('resume')" :class="{active:activeLink == 'resume'}"><i
-                                class="bi bi-file-earmark"></i><span>Resume</span></a>
+                                class="bi bi-file-earmark"></i><span>Resumes</span></a>
                     </li>
                     <li><a href="#portfolio" class="nav-link scrollto" @click="setActive('portfolio')" :class="{active:activeLink == 'portfolio'}"><i class="bi bi-layout-text-sidebar-reverse"></i>
                             <span>Portfolio</span></a></li>
