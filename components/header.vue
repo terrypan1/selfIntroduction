@@ -10,7 +10,7 @@ const setActive = (link) => {
     <header id="header">
         <div class="d-flex flex-column">
             <div class="profile">
-                <img src="../assets/img/img1.jpg" alt="" class="img-fluid rounded-circle w-100"
+                <img src="../assets/img/T1.png" alt="" class="img-fluid rounded-circle"
                     style="object-fit: cover;width: 220px;height: 160px;">
                 <h1 class="text-light"><a href="index.html">Terry Pan</a></h1>
                 <div class="social-links mt-3 text-center">

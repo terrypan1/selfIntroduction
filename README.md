@@ -6,15 +6,16 @@
     "overrides": {
     "vue": "latest"
     }
-# npm install bootstrap
-  npm install @popperjs/core 
+# npm
+- npm install bootstrap
+- npm install @popperjs/core 
 
-# npm install @splidejs/vue-splide
+- npm install @splidejs/vue-splide
 
-# npx nuxi generate 打包
+- npx nuxi generate 打包
 
-# Need to install the following packages: serve@14.2.0 可以啟動當server
+- Need to install the following packages: serve@14.2.0 可以啟動當server
 
-# npx serve .output/public 可以執行本地server
+- npx serve .output/public 可以執行本地server
 
-# npm i vue-countup-v3  https://github.com/inorganik/countUp.js
+- npm i vue-countup-v3  https://github.com/inorganik/countUp.js
