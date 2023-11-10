@@ -27,12 +27,18 @@ const setActive = (link) => {
             </div>
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                    <div class="portfolio-wrap">
+                    <div class="portfolio-wrap" style="background-color: blue;">
                         <div>
                             <a href="https://air-conditioner-seven.vercel.app/" data-gallery="portfolioGallery"
                                 class="portfolio-lightbox" title="嘉和水電冷氣行"><i class="bx bx-plus"></i>
                                 <img src="../assets/img/img2.png" class="img-fluid">
                             </a>
+                            <div class="portfolio-links">
+                                <div>123</div>
+                                <a href="../assets/img/img2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                    title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -124,5 +130,56 @@ const setActive = (link) => {
 .portfolio-wrap:hover::before {
     opacity: 1;
     cursor: pointer;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    background: rgba(20, 157, 221, 0.75);
+    transition: 0.3s;
+    width: 100px;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    background: rgba(20, 157, 221, 0.75);
+    transition: 0.3s;
+    //   width: 50%;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: rgba(20, 157, 221, 0.95);
+}
+
+.portfolio .portfolio-wrap .portfolio-links a+a {
+    border-left: 1px solid #37b3ed;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
 }
 </style>

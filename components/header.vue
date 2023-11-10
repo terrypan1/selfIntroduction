@@ -1,9 +1,9 @@
 <script setup>
 import { ref } from 'vue';
-const activeLink = ref(null);
+const activeLink = ref(null)
 
 const setActive = (link) => {
-    activeLink.value = link;
+    activeLink.value = link
 }
 </script>
 <template>
