@@ -104,25 +104,25 @@ const setActive = (link) => {
     cursor: pointer;
 }
 
-.portfolio-wrap {
-    position: relative;
-}
+// .portfolio-wrap {
+//     position: relative;
+// }
 
-.portfolio-wrap::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(5, 13, 24, 0.5);
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
+// .portfolio-wrap::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: rgba(5, 13, 24, 0.5);
+//     z-index: 0;
+//     opacity: 0;
+//     transition: opacity 0.3s ease-in-out;
+// }
 
-.portfolio-wrap:hover::before {
-    opacity: 1;
-    cursor: pointer;
-}
+// .portfolio-wrap:hover::before {
+//     opacity: 1;
+//     cursor: pointer;
+// }
 </style>
