@@ -28,41 +28,51 @@ const setActive = (link) => {
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                     <div class="portfolio-wrap">
-                        <div>
-                            <a href="https://air-conditioner-seven.vercel.app/" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox" title="嘉和水電冷氣行"><i class="bx bx-plus"></i>
-                                <img src="../assets/img/img2.png" class="img-fluid">
-                            </a>
+                        <img src="../assets/img/img2.png" class="img-fluid">
+                        <div class="portfolio-mask"></div>
+                        <div class="portfolio-links">
+                            <a href="https://air-conditioner-seven.vercel.app/" class="portfolio-lightbox" title="圖片"
+                                style="border-right: 1px solid white;"><i class="bi bi-eye"></i></a>
+                            <a href="https://air-conditioner-seven.vercel.app/" class="portfolio-lightbox"
+                                title="嘉和水電冷氣行"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="../assets/img/img3.png" class="img-fluid">
+                        <div class="portfolio-mask"></div>
+                        <div class="portfolio-links">
+                            <a href="https://chat-project-vdjs.vercel.app/" class="portfolio-lightbox" title="圖片"
+                                style="border-right: 1px solid white;"><i class="bi bi-eye"></i></a>
+                            <a href="https://chat-project-vdjs.vercel.app/" class="portfolio-lightbox"
+                                title="PsyChat聊天機器人"><i class="bi bi-link-45deg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="../assets/img/img4.png" class="img-fluid">
+                        <div class="portfolio-mask"></div>
+                        <div class="portfolio-links">
+                            <a href="http://220.133.235.3:5021/#/login" class="portfolio-lightbox" title="圖片"
+                                style="border-right: 1px solid white;"><i class="bi bi-eye"></i></a>
+                            <a href="http://220.133.235.3:5021/#/login" class="portfolio-lightbox" title="專案:企業訂餐Demo"><i
+                                    class="bi bi-link-45deg"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
                         <div>
-                            <a href="https://chat-project-vdjs.vercel.app/" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox" title="PsyChat聊天機器人"><i class="bx bx-plus"></i>
-                                <img src="../assets/img/img3.png" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <div>
-                            <a href="http://220.133.235.3:5021/#/login" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox" title="專案:企業訂餐Demo"><i class="bx bx-plus"></i>
-                                <img src="../assets/img/img4.png" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                    <div class="portfolio-wrap">
-                        <div>
-                            <a href="http://220.133.235.3:5041/login" data-gallery="portfolioGallery"
-                                class="portfolio-lightbox" title="專案:微商Demo"><i class="bx bx-plus"></i>
-                                <img src="../assets/img/img5.png" class="img-fluid">
-                            </a>
+                            <img src="../assets/img/img5.png" class="img-fluid">
+                            <div class="portfolio-mask"></div>
+                            <div class="portfolio-links">
+                                <a href="http://220.133.235.3:5041/login" class="portfolio-lightbox" title="圖片"
+                                    style="border-right: 1px solid white;"><i class="bi bi-eye"></i></a>
+                                <a href="http://220.133.235.3:5041/login" class="portfolio-lightbox"
+                                    title="專案:微商Demo"><i class="bi bi-link-45deg"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,25 +114,63 @@ const setActive = (link) => {
     cursor: pointer;
 }
 
-// .portfolio-wrap {
-//     position: relative;
-// }
+.portfolio-wrap {
+    position: relative;
+    /* 設為相對定位 */
+}
 
-// .portfolio-wrap::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: rgba(5, 13, 24, 0.5);
-//     z-index: 0;
-//     opacity: 0;
-//     transition: opacity 0.3s ease-in-out;
-// }
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 168px;
+    left: 0;
+}
 
-// .portfolio-wrap:hover::before {
-//     opacity: 1;
-//     cursor: pointer;
-// }
+.portfolio .portfolio-wrap .portfolio-links a {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background: rgba(20, 157, 221, 0.75);
+    font-size: 28px;
+    width: 50%;
+}
+
+.portfolio .portfolio-wrap .portfolio-links:hover {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 168px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.portfolio .portfolio-wrap {
+    position: relative;
+
+    .portfolio-mask {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); // 半透明黑色遮罩
+        z-index: 1;
+        pointer-events: none; // 讓鼠標事件穿透遮罩層
+    }
+
+    &:hover {
+        .portfolio-mask {
+            display: block;
+        }
+
+        .portfolio-links {
+            opacity: 1;
+            z-index: 2; // 確保連結在遮罩層之上
+        }
+    }
+}
 </style>
