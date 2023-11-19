@@ -70,10 +70,50 @@ const setActive = (link) => {
                             <div class="portfolio-links">
                                 <a href="http://220.133.235.3:5041/login" class="portfolio-lightbox" title="圖片"
                                     style="border-right: 1px solid white;"><i class="bi bi-eye"></i></a>
-                                <a href="http://220.133.235.3:5041/login" class="portfolio-lightbox"
-                                    title="專案:微商Demo"><i class="bi bi-link-45deg"></i></a>
+                                <a href="http://220.133.235.3:5041/login" class="portfolio-lightbox" title="專案:微商Demo"><i
+                                        class="bi bi-link-45deg"></i></a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mb-3 ">
+                    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button class="active" type="button" data-bs-slide-to="0" data-bs-target="#slider"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-slide-to="1" data-bs-target="#slider"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-slide-to="2" data-bs-target="#slider"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-slide-to="3" data-bs-target="#slider"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner rounded-5">
+                            <div class="carousel-item active">
+                                <img src="../assets/img/slider1.png" alt="" class="d-block w-100 rounded-5" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/slider2.png" alt="" class="d-block w-100 rounded-5" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/slider3.png" alt="" class="d-block w-100 rounded-5" />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../assets/img/slider4.png" alt="" class="d-block w-100 rounded-5" />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#slider">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#slider">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
