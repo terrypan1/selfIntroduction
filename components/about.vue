@@ -40,7 +40,7 @@ onMounted(() => {
                 </transition>
                 <transition name="slide-in-right">
                     <div class="col-lg-8 pt-4 pt-lg-0 content" v-if="isVisible" data-aos="fade-left">
-                        <h3>Front-end engineer & Backend engineer.</h3>
+                        <h3>Front-end engineer.</h3>
                         <p class="fst-italic">
                             我對於技術的深度了解及廣度探索，使我熱衷學習新事物。
                         </p>
