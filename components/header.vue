@@ -3,45 +3,47 @@ import { ref } from 'vue';
 const activeLink = ref(null)
 
 const setActive = (link) => {
-    activeLink.value = link
+  activeLink.value = link
 }
 </script>
 <template>
-    <header id="header">
-        <div class="d-flex flex-column">
-            <div class="profile">
-                <img src="../assets/img/T1.png" alt="" class="img-fluid rounded-circle"
-                    style="object-fit: cover;">
-                <h1 class="text-light"><a href="index.html">Terry Pan</a></h1>
-                <div class="social-links mt-3 text-center">
-                    <a href="https://github.com/terrypan1" class="twitter"><i class="bi bi-github"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                </div>
-            </div>
-            <nav id="navbar" class="nav-menu navbar">
-                <ul>
-                    <li><a href="#hero" class="nav-link scrollto" @click="setActive('hero')"
-                            :class="{ active: activeLink == 'hero' }"><i
-                                class="bi bi-house-door-fill"></i><span>Home</span></a>
-                    </li>
-                    <li><a href="#about" class="nav-link scrollto" @click="setActive('about')" :class="{active:activeLink == 'about'}"><i class="bi bi-person-circle"></i><span>About</span></a>
-                    </li>
-                    <li><a href="#resume" class="nav-link scrollto" @click="setActive('resume')" :class="{active:activeLink == 'resume'}"><i
-                                class="bi bi-file-earmark"></i><span>Resumes</span></a>
-                    </li>
-                    <li><a href="#portfolio" class="nav-link scrollto" @click="setActive('portfolio')" :class="{active:activeLink == 'portfolio'}"><i class="bi bi-layout-text-sidebar-reverse"></i>
-                            <span>Portfolio</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"  @click="setActive('contact')" :class="{active:activeLink == 'contact'}"><i class="bi bi-envelope"></i><span>Contact</span></a>
-                    </li>
-                </ul>
-            </nav>
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="../assets/img/T1.png" alt="" class="img-fluid rounded-circle" style="object-fit: cover;">
+        <h1 class="text-light"><a href="index.html">Terry Pan</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/terrypan1" class="twitter"><i class="bi bi-github"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         </div>
-    </header>
+      </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto" @click="setActive('hero')"
+              :class="{ active: activeLink == 'hero' }"><i class="bi bi-house-door-fill"></i><span>Home</span></a>
+          </li>
+          <li><a href="#about" class="nav-link scrollto" @click="setActive('about')"
+              :class="{ active: activeLink == 'about' }"><i class="bi bi-person-circle"></i><span>About</span></a>
+          </li>
+          <li><a href="#resume" class="nav-link scrollto" @click="setActive('resume')"
+              :class="{ active: activeLink == 'resume' }"><i class="bi bi-file-earmark"></i><span>Resumes</span></a>
+          </li>
+          <li><a href="#portfolio" class="nav-link scrollto" @click="setActive('portfolio')"
+              :class="{ active: activeLink == 'portfolio' }"><i class="bi bi-layout-text-sidebar-reverse"></i>
+              <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto" @click="setActive('contact')"
+              :class="{ active: activeLink == 'contact' }"><i class="bi bi-envelope"></i><span>Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 </template>
 <style lang="scss">
 #header {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
+
 // #header {
 //     overflow: hidden;
 // }
@@ -206,4 +208,23 @@ const setActive = (link) => {
 .mobile-nav-active #header {
   left: 0;
 }
-</style>
+
+.profile img {
+  width: 100%;
+  animation: scaleUp 10s ease-in-out infinite;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}</style>
+
