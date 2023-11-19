@@ -107,11 +107,11 @@ const setActive = (link) => {
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#slider">
-                            <span class="carousel-control-prev-icon"></span>
+                            <span class="carousel-control-prev-icon" style="background-color: black;border-radius: 50px;"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#slider">
-                            <span class="carousel-control-next-icon"></span>
+                            <span class="carousel-control-next-icon" style="background-color: black;border-radius: 50px;"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
