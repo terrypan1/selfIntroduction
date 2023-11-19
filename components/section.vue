@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 
 const typedText = ref('') // 用於綁定到模板的響應式數據
-const professions = ['Developer', 'Front-end engineer', 'Backend engineer']
+const professions = ['Developer', 'Front-end engineer']
 let currentProfession = 0 // 目前顯示的職業
 let letterIndex = 0 // 當前職業名稱的字母索引
 let typingSpeed = 150 // 打字速度
