@@ -54,7 +54,7 @@ const setActive = (link) => {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
+  z-index: 1000;
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
@@ -184,7 +184,7 @@ const setActive = (link) => {
   position: fixed;
   right: 15px;
   top: 15px;
-  z-index: 9998;
+  z-index: 1001;
   border: 0;
   font-size: 24px;
   transition: all 0.4s;

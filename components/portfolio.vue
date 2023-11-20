@@ -1,10 +1,17 @@
 <script setup>
 import { ref } from 'vue'
-const activateLink = ref(null)
 
+const activateLink = ref(null)
+const isModal = ref(null)
 const setActive = (link) => {
     activateLink.value = link
 }
+const handleclick = () => {
+    isModal.value.click()
+}
+onMounted(() => {
+
+})
 </script>
 <template>
     <section id="portfolio" class="portfolio section-bg">
@@ -27,12 +34,33 @@ const setActive = (link) => {
             </div>
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
                 <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div></div> <!-- 這是一個空的div，用於協助對齊 -->
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <img src="../assets/img/slider1.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-wrap">
                         <img src="../assets/img/img2.png" class="img-fluid">
                         <div class="portfolio-mask"></div>
                         <div class="portfolio-links">
-                            <a href="https://air-conditioner-seven.vercel.app/" class="portfolio-lightbox" title="圖片"
-                                style="border-right: 1px solid white;"><i class="bi bi-eye"></i></a>
+                            <a class="portfolio-lightbox" title="圖片" style="border-right: 1px solid white;"
+                                @click="handleclick"><i class="bi bi-eye">
+                                    <button type="button" class="portfolio-lightbox" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop" v-show="false" @click="handleclick" ref="isModal">
+                                        Launch static backdrop modal
+                                    </button>
+                                </i></a>
                             <a href="https://air-conditioner-seven.vercel.app/" class="portfolio-lightbox"
                                 title="嘉和水電冷氣行"><i class="bi bi-link-45deg"></i></a>
                         </div>
@@ -107,11 +135,13 @@ const setActive = (link) => {
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#slider">
-                            <span class="carousel-control-prev-icon" style="background-color: black;border-radius: 50px;"></span>
+                            <span class="carousel-control-prev-icon"
+                                style="background-color: black;border-radius: 50px;"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#slider">
-                            <span class="carousel-control-next-icon" style="background-color: black;border-radius: 50px;"></span>
+                            <span class="carousel-control-next-icon"
+                                style="background-color: black;border-radius: 50px;"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
