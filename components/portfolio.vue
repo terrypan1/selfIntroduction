@@ -78,7 +78,7 @@ const handleclick = (img) => {
                         <img src="../assets/img/img2.png" class="img-fluid">
                         <div class="portfolio-mask"></div>
                         <div class="portfolio-links">
-                            <a class="portfolio-lightbox" title="圖片" style="border-right: 1px solid white;"
+                            <a class="portfolio-lightbox" title="圖片" style="border-right: 1px solid white;cursor: pointer;"
                                 @click="handleclick('img1')"><i class="bi bi-eye">
                                     <button type="button" class="portfolio-lightbox" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop" v-show="false" ref="isModal">
@@ -95,7 +95,7 @@ const handleclick = (img) => {
                         <img src="../assets/img/img3.png" class="img-fluid">
                         <div class="portfolio-mask"></div>
                         <div class="portfolio-links">
-                            <a class="portfolio-lightbox" title="圖片" style="border-right: 1px solid white;"
+                            <a class="portfolio-lightbox" title="圖片" style="border-right: 1px solid white;cursor: pointer;"
                                 @click="handleclick('img2')"><i class="bi bi-eye">
                                     <button type="button" class="portfolio-lightbox" data-bs-toggle="modal"
                                         data-bs-target="#staticBackdrop2" v-show="false" ref="isModal2">
