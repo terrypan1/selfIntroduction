@@ -3,6 +3,7 @@ import About from './about.vue'
 import Skill from './skill.vue'
 import Resume from './resume.vue'
 import Profolio from './portfolio.vue'
+import Contact from '../components/contact.vue';
 </script>
 <template>
     <main id="main">
@@ -10,6 +11,7 @@ import Profolio from './portfolio.vue'
         <Skill></Skill>
         <Resume></Resume>
         <Profolio></Profolio>
+        <Contact></Contact>
     </main>
 </template>
 
