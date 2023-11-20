@@ -3,15 +3,23 @@ import { ref } from 'vue'
 
 const activateLink = ref(null)
 const isModal = ref(null)
+const isModal2 = ref(null)
 const setActive = (link) => {
     activateLink.value = link
 }
-const handleclick = () => {
-    isModal.value.click()
+const handleclick = (img) => {
+    console.log(img)
+    switch (img) {
+        case 'img1':
+            isModal.value.click()
+            break;
+        case 'img2':
+            isModal2.value.click()
+            break;
+    }
+    // isModal.value.click()
 }
-onMounted(() => {
 
-})
 </script>
 <template>
     <section id="portfolio" class="portfolio section-bg">
@@ -50,14 +58,30 @@ onMounted(() => {
                             </div>
                         </div>
                     </div>
+                    <!-- Modal2 -->
+                    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="d-flex justify-content-between">
+                                        <div></div> <!-- 這是一個空的div，用於協助對齊 -->
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <img src="../assets/img/slider2.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="portfolio-wrap">
                         <img src="../assets/img/img2.png" class="img-fluid">
                         <div class="portfolio-mask"></div>
                         <div class="portfolio-links">
                             <a class="portfolio-lightbox" title="圖片" style="border-right: 1px solid white;"
-                                @click="handleclick"><i class="bi bi-eye">
+                                @click="handleclick('img1')"><i class="bi bi-eye">
                                     <button type="button" class="portfolio-lightbox" data-bs-toggle="modal"
-                                        data-bs-target="#staticBackdrop" v-show="false" @click="handleclick" ref="isModal">
+                                        data-bs-target="#staticBackdrop" v-show="false" ref="isModal">
                                         Launch static backdrop modal
                                     </button>
                                 </i></a>
@@ -71,8 +95,12 @@ onMounted(() => {
                         <img src="../assets/img/img3.png" class="img-fluid">
                         <div class="portfolio-mask"></div>
                         <div class="portfolio-links">
-                            <a href="https://chat-project-vdjs.vercel.app/" class="portfolio-lightbox" title="圖片"
-                                style="border-right: 1px solid white;"><i class="bi bi-eye"></i></a>
+                            <a class="portfolio-lightbox" title="圖片" style="border-right: 1px solid white;"
+                                @click="handleclick('img2')"><i class="bi bi-eye">
+                                    <button type="button" class="portfolio-lightbox" data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2" v-show="false" ref="isModal2">
+                                    </button>
+                                </i></a>
                             <a href="https://chat-project-vdjs.vercel.app/" class="portfolio-lightbox"
                                 title="PsyChat聊天機器人"><i class="bi bi-link-45deg"></i></a>
                         </div>
