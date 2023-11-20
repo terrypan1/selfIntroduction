@@ -1,6 +1,9 @@
 <template>
     <section id="contact" class="mt-4 text-bg-dark">
         <div class="container">
+            <div class="section-title">
+                <h2 class="text-white">Contact</h2>
+            </div>
             <div class="row">
                 <div class="col-md-4 d-flex flex-column jutify-content-center contact-1">
                     <h5>Contact me</h5>
