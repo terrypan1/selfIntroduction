@@ -40,9 +40,10 @@ onMounted(() => {
         <div class="container">
             <div class="section-title">
                 <h2>Skills</h2>
-                <p style="font-weight: 900;">一名專注於前端想前往後端開發的工程師。以下是我熟練掌握的技術和工具，以及相對應的熟練程度</p>
-                <p style="font-weight: 900;">前端:能夠運用Vuex、Vue Router進行複雜應用的開發，並有使用Nuxt.js的SSR項目經驗。</p>
-                <p style="font-weight: 900;">後端:Flask+uWsgi+Nginx+Docker容器化+GCP雲端部屬</p>
+                <p style="font-weight: 900;">一名專注於全端開發的工程師。以下是我熟練掌握的技術和工具，以及相對應的熟練程度</p>
+                <p style="font-weight: 900;">前端: Vue + Nuxt</p>
+                <p style="font-weight: 900;">後端: Net Core Web Api</p>
+                <p style="font-weight: 900;">部屬: Nginx + Docker</p>
             </div>
             <Transition name="slide-up">
                 <div v-if="isVisible" class="animated-element">
@@ -56,7 +57,7 @@ onMounted(() => {
                                 </div>
                             </div>
                             <div class="progress">
-                                <span class="skill">Python<i class="val">70%</i></span>
+                                <span class="skill">Python<i class="val">60%</i></span>
                                 <div class="progress-bar-wrap">
                                     <div class="progress-bar" :style="{ width: progress.Python }" role="progressbar"
                                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -72,7 +73,7 @@ onMounted(() => {
                         </div>
                         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                             <div class="progress">
-                                <span class="skill">Flask<i class="val">65%</i></span>
+                                <span class="skill">Net Core Web Api<i class="val">65%</i></span>
                                 <div class="progress-bar-wrap">
                                     <div class="progress-bar" :style="{ width: progress.Flask }" role="progressbar"
                                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
@@ -86,7 +87,7 @@ onMounted(() => {
                                 </div>
                             </div>
                             <div class="progress">
-                                <span class="skill">GCP<i class="val">60%</i></span>
+                                <span class="skill">Docker<i class="val">60%</i></span>
                                 <div class="progress-bar-wrap">
                                     <div class="progress-bar" :style="{ width: progress.GCP }" role="progressbar"
                                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>

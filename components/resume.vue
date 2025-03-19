@@ -43,25 +43,35 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="resume-title">工作經驗</h3>
-                    <div class="resume-item">
-                        <h4>坂和企業有限公司</h4>
-                        <h5>2022/7 - 2022/11</h5>
-                        <p><em>前端實習生</em></p>
-                        <ul>
-                            <p>畫面製作與程式撰寫</p>
-                            <li>地點:高雄</li>
-                            <li>6個月</li>
-                        </ul>
-                    </div>
+                    <h3 class="resume-title">軟體工作經驗</h3>
                     <div class="resume-item">
                         <h4>連訊科技服務股份有限公司</h4>
-                        <h5>2022/12 - 2023/8</h5>
+                        <h5>2022/7 - 2023/8</h5>
                         <p><em>前端工程師</em></p>
                         <ul>
                             <p>前端專案開發</p>
                             <li>地點:高雄</li>
-                            <li>9個月</li>
+                            <li>1年2個月</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>滙律科技股份有限公司</h4>
+                        <h5>2024/1 - 2024/10</h5>
+                        <p><em>全端工程師</em></p>
+                        <ul>
+                            <p>全端專案開發</p>
+                            <li>地點:新竹</li>
+                            <li>10個月</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>貝果科技有限公司</h4>
+                        <h5>2024/11 - 2025/02</h5>
+                        <p><em>全端工程師</em></p>
+                        <ul>
+                            <p>全端專案開發(短期支援)</p>
+                            <li>地點:高雄</li>
+                            <li>4個月</li>
                         </ul>
                     </div>
                 </div>
