@@ -129,8 +129,8 @@ export const projects: Project[] = [
       "MQTT"
     ],
     "images": [
-      "/projects/agv/map.webp",
-      "/projects/agv/login.webp"
+      "/projects/agv/login.webp",
+      "/projects/agv/map.webp"
     ]
   },
   {
@@ -244,8 +244,8 @@ export const projects: Project[] = [
       "Nginx"
     ],
     "images": [
-      "/projects/pcba/repair.webp",
-      "/projects/pcba/login.webp"
+      "/projects/pcba/login.webp",
+      "/projects/pcba/repair.webp"
     ]
   },
   {
@@ -469,8 +469,8 @@ export const projects: Project[] = [
       "EMS Dashboard"
     ],
     "images": [
-      "/projects/ems/overview.webp",
-      "/projects/ems/login.webp"
+      "/projects/ems/login.webp",
+      "/projects/ems/overview.webp"
     ]
   },
   {
