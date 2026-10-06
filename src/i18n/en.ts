@@ -56,7 +56,7 @@ export default {
     title: 'PROJECTS',
     subtitle: 'Industrial automation, robotics, AI vision, and software systems.',
     label: 'CASE STUDY INDEX / 2026',
-    lead: 'Most of these projects start on the factory floor: understanding the equipment, the communication links and how the work actually gets done, then building up the data platform, dispatch systems and AI applications, and seeing it through to go-live and on-site rollout.',
+    lead: 'From AGV fleet dispatch and on-board ROS, industrial AI defect analysis and report checking, to energy monitoring and enterprise systems: integration projects that span the factory floor to the software platform.',
     filters: { all: 'All', agv: 'AGV / ROS', ai: 'AI / Vision', system: 'Web / IoT' },
     count: '{n} PROJECTS // REAL-WORLD EXPERIENCE // CONTINUOUSLY UPDATING',
     role: 'Role',
