@@ -141,7 +141,7 @@ export default {
   experience: {
     title: 'EXPERIENCE',
     subtitle: 'Work experience and technical skills',
-    lead: 'I started in quality control and process engineering in manufacturing in 2011, then moved through mechatronics, front-end and full-stack development to system integration for AGV, ROS and industrial AI. Below is what I did in each role, and the technical skills I work with today.',
+    lead: 'I started in quality control and process engineering in manufacturing in 2011, then moved through mechatronics, front-end and full-stack development to system integration for AGV, ROS and industrial AI.',
     tagline: 'REAL PROJECTS. REAL PROBLEMS. REAL SOLUTIONS.',
     work: 'WORK EXPERIENCE',
     workZh: 'Career',
