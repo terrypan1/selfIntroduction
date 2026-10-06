@@ -54,6 +54,7 @@ export default {
     title: '專案作品',
     subtitle: '工業自動化、機器人、AI 視覺與軟體系統。',
     label: '案例索引 / 2026',
+    lead: '這裡整理我實際參與的 6 個專案：從 AGV 車隊調度與車載 ROS、工業電腦的 AI 維修輔助、COA 檢驗報告比對，到校園能源管理、太陽能監控與企業內部系統。每個專案都寫清楚我的角色、系統架構、關鍵決策與最後的成效。',
     filters: { all: '全部', agv: 'AGV / ROS', ai: 'AI 視覺', system: 'Web / IoT' },
     count: '{n} 個專案 // 實際專案經驗 // 持續更新',
     role: '角色',
@@ -138,6 +139,7 @@ export default {
   experience: {
     title: '工作經歷',
     subtitle: '經歷與技術能力',
+    lead: '從 2011 年在製造業做品管與製程開始，一路經歷機電工程、前端、全端開發，到負責 AGV、ROS 與工業 AI 的系統整合。下方依時間整理每段經歷的工作內容，以及目前掌握的技術能力。',
     tagline: '真實專案 · 真實問題 · 真實解法',
     work: '工作經歷',
     workZh: '',

@@ -1,7 +1,9 @@
 <template>
   <q-page>
     <div class="container">
-      <PageHero :eyebrow="t('experience.tagline')" :title="t('experience.title')" :subtitle="t('experience.subtitle')" :image="heroImages.experience" :image-alt="t('experience.title')" />
+      <PageHero :eyebrow="t('experience.tagline')" :title="t('experience.title')" :subtitle="t('experience.subtitle')" :image="heroImages.experience" :image-alt="t('experience.title')">
+        <p class="hero-lead">{{ t('experience.lead') }}</p>
+      </PageHero>
 
       <div class="cols">
         <section class="block">
@@ -72,6 +74,14 @@ useMeta(() => ({ title: `${t('pages.experience')}｜${pick({ zh: '潘建宇', en
 </script>
 
 <style scoped>
+.hero-lead {
+  text-wrap: pretty;
+  font: 400 15px / 1.95 var(--font-tc);
+  margin: 18px 0 0;
+  padding-left: 14px;
+  border-left: 2px solid var(--accent);
+  max-width: 30em;
+}
 .cols {
   display: grid;
   grid-template-columns: 1fr 1.15fr;

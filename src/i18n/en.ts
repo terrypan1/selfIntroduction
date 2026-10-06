@@ -56,6 +56,7 @@ export default {
     title: 'PROJECTS',
     subtitle: 'Industrial automation, robotics, AI vision, and software systems.',
     label: 'CASE STUDY INDEX / 2026',
+    lead: 'Six projects I have worked on hands-on: AGV fleet dispatch and on-board ROS, AI-assisted repair for industrial PCs, COA report checking, campus energy management, solar monitoring and internal enterprise systems. Each one covers my role, the system architecture, key decisions and the results.',
     filters: { all: 'All', agv: 'AGV / ROS', ai: 'AI / Vision', system: 'Web / IoT' },
     count: '{n} PROJECTS // REAL-WORLD EXPERIENCE // CONTINUOUSLY UPDATING',
     role: 'Role',
@@ -140,6 +141,7 @@ export default {
   experience: {
     title: 'EXPERIENCE',
     subtitle: 'Work experience and technical skills',
+    lead: 'I started in quality control and process engineering in manufacturing in 2011, then moved through mechatronics, front-end and full-stack development to system integration for AGV, ROS and industrial AI. Below is what I did in each role, and the technical skills I work with today.',
     tagline: 'REAL PROJECTS. REAL PROBLEMS. REAL SOLUTIONS.',
     work: 'WORK EXPERIENCE',
     workZh: 'Career',
