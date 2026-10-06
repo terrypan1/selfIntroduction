@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>潘建宇 Pan Chien-Yu｜資深全端工程師</title>
+    <meta name="description" content="潘建宇（Pan Chien-Yu），資深全端工程師，專注 AGV 派車系統、ROS 車載軟體、工業 AI 與 Web 系統整合。" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // 首屏就套上主題，避免閃白（跟 src/theme/useTheme.ts 同一個 key）
+      ;(function () {
+        var saved = localStorage.getItem('theme')
+        var mode = saved === 'light' || saved === 'dark' ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+        document.documentElement.dataset.theme = mode
+      })()
+    </script>
+    <style>
+      html[data-theme='light'], html[data-theme='light'] body { background: #f4f7f9; }
+      html[data-theme='dark'], html[data-theme='dark'] body { background: #0d141c; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

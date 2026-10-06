@@ -1,0 +1,148 @@
+/*
+ * 全站設計 token：唯一來源。元件只讀這裡的變數，不寫死色碼。
+ * 依據 designs/ 系列甲（01-home、02-projects、03-about-a、05-contact）實測。
+ * 白天／晚上由 <html data-theme> 切換，見 theme/useTheme.ts。
+ */
+:root {
+  /* 字體 */
+  --font-display: 'Archivo Variable', 'Noto Sans TC', system-ui, sans-serif;
+  --font-sans: 'Inter Variable', 'Noto Sans TC', system-ui, sans-serif;
+  --font-tc: 'Noto Sans TC', 'Inter Variable', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+
+  /* 字級 */
+  --fs-display: clamp(56px, 6.6vw, 96px);
+  --fs-h1: clamp(28px, 2.6vw, 34px);
+  --fs-h2: 22px;
+  --fs-h3: 17px;
+  --fs-body: 15px;
+  --fs-small: 13px;
+  --fs-label: 12px;
+  --fs-micro: 10.5px;
+
+  /* 字距（小型大寫標籤） */
+  --track-label: 0.24em;
+  --track-nav: 0.14em;
+
+  /* 間距 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+
+  /* 版面 */
+  --container: 1360px;
+  --gutter: 40px;
+  --header-h: 76px;
+  --grid-size: 48px;
+
+  /* 形狀：設計稿接近直角 */
+  --radius: 2px;
+  --border: 1px;
+}
+
+:root,
+[data-theme='light'] {
+  --paper: #f4f7f9;
+  --surface: #ffffff;
+  --surface-2: #e9eef3;
+  --ink: #142334;
+  --ink-2: #5e6a77;
+  --ink-3: #8a95a3;
+  --line: #d9dfe6;
+  --line-strong: #142334;
+  --grid: rgba(20, 35, 52, 0.045);
+  --plus: #9aa7b5;
+  --accent: #1f5fc9;
+  --accent-2: #6fa9e0;
+  --accent-soft: rgba(31, 95, 201, 0.08);
+  --on-accent: #ffffff;
+  --header-bg: rgba(244, 247, 249, 0.9);
+  --shadow: 0 18px 40px -28px rgba(20, 35, 52, 0.35);
+  --iso-lamp: #2f7bff;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --paper: #0d141c;
+  --surface: #141e29;
+  --surface-2: #1a2533;
+  --ink: #e3eaf2;
+  --ink-2: #9dadbf;
+  --ink-3: #6e8195;
+  --line: #243242;
+  --line-strong: #e3eaf2;
+  --grid: rgba(227, 234, 242, 0.045);
+  --plus: #4a5b6e;
+  --accent: #4c8dff;
+  --accent-2: #3b6aa6;
+  --accent-soft: rgba(76, 141, 255, 0.12);
+  --on-accent: #ffffff;
+  --header-bg: rgba(13, 20, 28, 0.9);
+  --shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.7);
+  --iso-lamp: #4c8dff;
+  color-scheme: dark;
+}
+
+/* Quasar 品牌色跟著 token 走 */
+:root {
+  --q-primary: var(--accent);
+  --q-dark: var(--surface);
+  --q-dark-page: var(--paper);
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
