@@ -1,4 +1,4 @@
-# 潘建宇 Pan Chien-Yu｜個人作品集
+# 個人作品集
 
 網站：https://self-introduction-one.vercel.app
 

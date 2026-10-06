@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "潘建宇個人作品集（Vue 3＋Vite＋Quasar）",
+  "description": "個人作品集（Vue 3＋Vite＋Quasar）",
   "scripts": {
     "dev": "vite",
     "build": "node scripts/check-content.mjs && vue-tsc --noEmit && vite build",
