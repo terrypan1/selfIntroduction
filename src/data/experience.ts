@@ -21,12 +21,12 @@ export const experience: Experience[] = [
     "points": {
       "zh": [
         "接手 MCS 並主導 Dapper → EF Core 重構，提出新一代架構",
-        "AGV iMCS、車載 ROS、PCBA AI、COA、EMS 多專案並行",
+        "AGV MCS、車載 ROS、PCBA AI、COA、EMS 多專案並行",
         "為各專案建立開發守則、驗收清單與工程交接手冊"
       ],
       "en": [
         "Took over the MCS, led the Dapper → EF Core refactor and proposed the new architecture",
-        "Ran AGV iMCS, on-board ROS, PCBA AI, COA and EMS in parallel",
+        "Ran AGV MCS, on-board ROS, PCBA AI, COA and EMS in parallel",
         "Wrote coding guidelines, acceptance checklists and handover manuals for each project"
       ]
     }

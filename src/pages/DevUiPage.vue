@@ -20,7 +20,7 @@
 
       <h3>Card</h3>
       <div class="cards">
-        <NumberedCard to="/projects/agv" title="AGV / iMCS" index="01" subtitle="車隊調度 · 派工引擎 · 車載 ROS" :tags="['AGV', '.NET']"><template #media><ProjectGlyph kind="agv" /></template></NumberedCard>
+        <NumberedCard to="/projects/agv" title="AGV / MCS" index="01" subtitle="車隊調度 · 派工引擎 · 車載 ROS" :tags="['AGV', '.NET']"><template #media><ProjectGlyph kind="agv" /></template></NumberedCard>
         <NumberedCard to="/projects/pcba" title="AI 維修助手" index="02" subtitle="MES 資料 · 圖面定位" :tags="['FastAPI']"><template #media><ProjectGlyph kind="ai" /></template></NumberedCard>
         <NumberedCard to="/projects/ems" title="EMS" index="03" subtitle="智慧電表 · Modbus" :tags="['Modbus']"><template #media><ProjectGlyph kind="iot" /></template></NumberedCard>
         <NumberedCard to="/projects/order" title="Web" index="04" subtitle="權限 · 動態路由" :tags="['Vue 3']"><template #media><ProjectGlyph kind="web" /></template></NumberedCard>

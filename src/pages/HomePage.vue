@@ -267,7 +267,7 @@ onBeforeUnmount(() => {
 }
 h2 {
   margin: 0;
-  font: 700 16px / 1.3 var(--font-sans);
+  font: 700 18px / 1.3 var(--font-sans);
   letter-spacing: 0.1em;
   color: var(--ink);
 }

@@ -91,7 +91,7 @@ const PRINCIPLE_ICONS = [mdiFactory, mdiPuzzleOutline, mdiShieldCheckOutline, md
 const FOCUS_KINDS: ProjectCategory[] = ['agv', 'agv', 'ai', 'web']
 const FOCUS_LINKS = ['/projects/agv', '/projects/agv', '/projects?category=ai', '/projects?category=system']
 // 只放 104 有的技術
-const FOCUS_TAGS = [['AGV', 'iMCS', 'SignalR', 'Quartz'], ['ROS 1 Noetic', 'SLAM', 'CANopen', 'VDA5050'], ['PP-OCRv5', 'PP-DocLayoutV2', 'FastAPI'], ['Vue 3', 'Quasar', '.NET', 'Docker']]
+const FOCUS_TAGS = [['AGV', 'MCS', 'SignalR', 'Quartz'], ['ROS 1 Noetic', 'SLAM', 'CANopen', 'VDA5050'], ['PP-OCRv5', 'PP-DocLayoutV2', 'FastAPI'], ['Vue 3', 'Quasar', '.NET', 'Docker']]
 
 const { t, tm } = useI18n()
 const { pick } = useLocale()

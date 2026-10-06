@@ -19,8 +19,8 @@ export interface ProjectDetail {
 export const projectDetails: Record<string, ProjectDetail> = {
   "agv": {
     "title": {
-      "zh": "AGV iMCS",
-      "en": "AGV iMCS"
+      "zh": "AGV MCS",
+      "en": "AGV MCS"
     },
     "subEn": "DISPATCHING SYSTEM",
     "sub": {
@@ -56,8 +56,8 @@ export const projectDetails: Record<string, ProjectDetail> = {
         }
       ],
       "core": {
-        "zh": "iMCS 派工引擎（ASP.NET Core）",
-        "en": "iMCS workflow engine (ASP.NET Core)"
+        "zh": "MCS 派工引擎（ASP.NET Core）",
+        "en": "MCS workflow engine (ASP.NET Core)"
       },
       "bottom": [
         {

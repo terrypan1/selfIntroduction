@@ -7,8 +7,8 @@ export const projects: Project[] = [
   {
     "id": "agv",
     "short": {
-      "zh": "AGV / iMCS",
-      "en": "AGV / iMCS"
+      "zh": "AGV / MCS",
+      "en": "AGV / MCS"
     },
     "name": {
       "zh": "AGV 智慧物流控制系統與車載 ROS",
@@ -24,8 +24,8 @@ export const projects: Project[] = [
       "en": "2025/7 – present"
     },
     "summary": {
-      "zh": "為工業現場建置車隊調度平台（iMCS）與車載控制系統。從接手舊系統、重構，到重建新一代架構，再往下延伸到車載層，全程獨立完成。",
-      "en": "A fleet dispatch platform (iMCS) and on-board control software for an industrial site. I took over a legacy system, refactored it, rebuilt the next generation and extended it down to the vehicle, working solo throughout."
+      "zh": "為工業現場建置車隊調度平台（MCS）與車載控制系統。從接手舊系統、重構，到重建新一代架構，再往下延伸到車載層，全程獨立完成。",
+      "en": "A fleet dispatch platform (MCS) and on-board control software for an industrial site. I took over a legacy system, refactored it, rebuilt the next generation and extended it down to the vehicle, working solo throughout."
     },
     "role": {
       "zh": "獨立負責架構設計、開發與現場驗證",
@@ -70,8 +70,8 @@ export const projects: Project[] = [
       },
       {
         "heading": {
-          "zh": "上位調度系統 iMCS",
-          "en": "Fleet dispatch (iMCS)"
+          "zh": "上位調度系統 MCS",
+          "en": "Fleet dispatch (MCS)"
         },
         "items": {
           "zh": [

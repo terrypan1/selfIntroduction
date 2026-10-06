@@ -3,7 +3,7 @@
     <CrossMark class="cm cm-tl" /><CrossMark class="cm cm-tr" />
     <div class="intro">
       <Eyebrow class="eyebrow">{{ eyebrow }}</Eyebrow>
-      <DisplayTitle class="title" :style="{ fontSize: fitTitle(title, 96, true) }">{{ title }}</DisplayTitle>
+      <DisplayTitle class="title" :style="{ fontSize: fitTitle(title, 72, true) }">{{ title }}</DisplayTitle>
       <p v-if="subtitle" class="subtitle">{{ subtitle }}</p>
       <slot />
     </div>
