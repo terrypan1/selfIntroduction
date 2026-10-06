@@ -462,7 +462,10 @@ export const projects: Project[] = [
       "PostgreSQL",
       "EMS Dashboard"
     ],
-    "images": []
+    "images": [
+      "/projects/ems/overview.webp",
+      "/projects/ems/login.webp"
+    ]
   },
   {
     "id": "solar",
