@@ -56,7 +56,7 @@ export default {
     title: 'PROJECTS',
     subtitle: 'Industrial automation, robotics, AI vision, and software systems.',
     label: 'CASE STUDY INDEX / 2026',
-    lead: 'Six projects I have worked on hands-on: AGV fleet dispatch and on-board ROS, AI-assisted repair for industrial PCs, COA report checking, campus energy management, solar monitoring and internal enterprise systems. Each one covers my role, the system architecture, key decisions and the results.',
+    lead: 'Most of these projects start on the factory floor: understanding the equipment, the communication links and how the work actually gets done, then building up the data platform, dispatch systems and AI applications, and seeing it through to go-live and on-site rollout.',
     filters: { all: 'All', agv: 'AGV / ROS', ai: 'AI / Vision', system: 'Web / IoT' },
     count: '{n} PROJECTS // REAL-WORLD EXPERIENCE // CONTINUOUSLY UPDATING',
     role: 'Role',
