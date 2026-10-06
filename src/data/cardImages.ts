@@ -1,4 +1,4 @@
-// 首頁精選專案卡的圖片：AGV、PCBA 裁自 designs/01-home.png，EMS 為系統實際截圖（只取需量曲線，不含大樓名稱），其餘先借其他頁主視覺，有真實截圖再換
+// 首頁精選專案卡的圖片：AGV、PCBA 裁自 designs/01-home.png，EMS 裁自系統登入頁的校園插圖，其餘先借其他頁主視覺，有真實截圖再換
 import agv from '@/assets/home/proj-agv.webp'
 import pcba from '@/assets/home/proj-pcba.webp'
 import ems from '@/assets/home/proj-ems.webp'
