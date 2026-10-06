@@ -1,9 +1,10 @@
-// 首頁精選專案卡的圖片：AGV、PCBA 裁自 designs/01-home.png，EMS 裁自系統登入頁的校園插圖，其餘先借其他頁主視覺，有真實截圖再換
+// 首頁精選專案卡的圖片：AGV、PCBA、EMS 裁自各系統登入頁，
+// COA、太陽能、訂餐為藍圖線稿示意插圖，有真實截圖再換
 import agv from '@/assets/home/proj-agv.webp'
 import pcba from '@/assets/home/proj-pcba.webp'
 import ems from '@/assets/home/proj-ems.webp'
-import coa from '@/assets/detail-pcba.webp'
-import solar from '@/assets/hero-experience.webp'
-import order from '@/assets/hero-projects.webp'
+import coa from '@/assets/home/proj-coa.svg'
+import solar from '@/assets/home/proj-solar.svg'
+import order from '@/assets/home/proj-order.svg'
 
 export const cardImages: Record<string, string> = { agv, pcba, coa, ems, solar, order }

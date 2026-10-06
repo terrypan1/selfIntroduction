@@ -128,7 +128,10 @@ export const projects: Project[] = [
       "VDA5050",
       "MQTT"
     ],
-    "images": []
+    "images": [
+      "/projects/agv/map.webp",
+      "/projects/agv/login.webp"
+    ]
   },
   {
     "id": "pcba",
@@ -240,7 +243,10 @@ export const projects: Project[] = [
       "PDF.js",
       "Nginx"
     ],
-    "images": []
+    "images": [
+      "/projects/pcba/repair.webp",
+      "/projects/pcba/login.webp"
+    ]
   },
   {
     "id": "coa",

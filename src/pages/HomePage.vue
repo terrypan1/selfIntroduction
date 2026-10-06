@@ -5,7 +5,7 @@
         <CrossMark class="cm cm-tl" /><CrossMark class="cm cm-tr" />
         <div class="intro">
           <Eyebrow class="eyebrow">{{ t('home.eyebrow') }}</Eyebrow>
-          <DisplayTitle class="name" :style="{ fontSize: fitTitle(pick(profile.display), 92) }">{{ pick(profile.display) }}</DisplayTitle>
+          <DisplayTitle class="name" :style="{ fontSize: fitTitle(pick(profile.display), 72) }">{{ pick(profile.display) }}</DisplayTitle>
           <div class="nick">{{ pick(profile.alias) }}</div>
           <div class="title">{{ pick(profile.title) }}</div>
           <div class="field">{{ pick(profile.field) }}</div>
@@ -34,7 +34,7 @@
           <span class="idx">02</span><h2>{{ t('home.projectsTitle') }}</h2><p v-if="t('home.projectsSub')">{{ t('home.projectsSub') }}</p>
           <router-link to="/projects" class="view-all">{{ t('home.viewAll') }}<q-icon :name="mdiArrowRight" size="16px" /></router-link>
         </div>
-        <div ref="track" class="track" @scroll.passive="update" @mouseenter="paused = true" @mouseleave="paused = false" @focusin="paused = true" @focusout="paused = false">
+        <div ref="track" class="track" :class="{ dragging }" @scroll.passive="update" @mouseenter="paused = true" @mouseleave="paused = false; onPointerUp()" @focusin="paused = true" @focusout="paused = false" @pointerdown="onPointerDown" @pointermove="onPointerMove" @pointerup="onPointerUp" @click.capture="onClickCapture" @dragstart.prevent>
           <router-link v-for="(p, i) in projects" :key="p.id" :to="`/projects/${p.id}`" class="card">
             <div class="media"><img :src="cardImages[p.id]" :alt="pick(p.name)" loading="lazy" /><span class="badge">{{ String(i + 1).padStart(2, '0') }}</span></div>
             <div class="body">
@@ -142,6 +142,39 @@ function update() {
 function goTo(i: number) {
   track.value?.scrollTo({ left: i * step(), behavior: 'smooth' })
 }
+// 滑鼠拖曳：拖的時候關掉 snap，放開後對齊最近一張；有拖動就擋掉放開時的點擊，避免誤進專案頁
+let dragX = 0
+let dragLeft = 0
+const dragging = ref(false)
+let dragged = false
+function onPointerDown(e: PointerEvent) {
+  const el = track.value
+  if (!el || e.pointerType !== 'mouse' || e.button !== 0) return
+  dragging.value = true
+  dragged = false
+  dragX = e.clientX
+  dragLeft = el.scrollLeft
+}
+function onPointerMove(e: PointerEvent) {
+  const el = track.value
+  if (!el || !dragging.value) return
+  const dx = e.clientX - dragX
+  if (Math.abs(dx) > 5) dragged = true
+  el.scrollLeft = dragLeft - dx
+}
+function onPointerUp() {
+  const el = track.value
+  if (!el || !dragging.value) return
+  dragging.value = false
+  goTo(Math.min(stops.value - 1, Math.round(el.scrollLeft / step())))
+}
+function onClickCapture(e: MouseEvent) {
+  if (dragged) {
+    e.preventDefault()
+    e.stopPropagation()
+    dragged = false
+  }
+}
 let timer: number | undefined
 function tick() {
   const el = track.value
@@ -234,7 +267,7 @@ onBeforeUnmount(() => {
 }
 h2 {
   margin: 0;
-  font: 700 18px / 1.3 var(--font-sans);
+  font: 700 16px / 1.3 var(--font-sans);
   letter-spacing: 0.1em;
   color: var(--ink);
 }
@@ -322,6 +355,14 @@ h2 {
 .track::-webkit-scrollbar {
   display: none;
 }
+@media (pointer: fine) {
+  .track { cursor: grab; }
+}
+.track.dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
 .card {
   scroll-snap-align: start;
   display: grid;
@@ -341,7 +382,10 @@ h2 {
   overflow: hidden;
   background: var(--surface-2);
 }
+/* 圖片絕對定位，卡片高度只跟文字走，不被圖片原始尺寸撐高 */
 .media img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
