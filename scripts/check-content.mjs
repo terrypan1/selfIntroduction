@@ -1,5 +1,6 @@
-// 內容規則檢查（docs/實作/02）：build 前執行，src/ 裡出現下列字串就失敗。
-import { readdirSync, readFileSync, statSync } from 'node:fs'
+// 內容規則檢查：build 前執行，src/ 裡出現下列字串就失敗。
+// 個資類字串放在 scripts/banned.local.json（不進版控），格式 [["字串", "原因"], ...]，有這個檔才會檢查。
+import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { join } from 'node:path'
 
 const BANNED = [
@@ -14,6 +15,8 @@ const BANNED = [
   ['遠端工作', '不放可接受地點'],
   ['Open to remote', '不放可接受地點'],
 ]
+const LOCAL = 'scripts/banned.local.json'
+if (existsSync(LOCAL)) BANNED.push(...JSON.parse(readFileSync(LOCAL, 'utf8')))
 
 const files = []
 const walk = (d) => readdirSync(d).forEach((f) => { const p = join(d, f); statSync(p).isDirectory() ? walk(p) : /\.(ts|vue|html|css)$/.test(f) && files.push(p) })

@@ -5,3 +5,5 @@ dist
 *.log
 .env*
 !.env.example
+docs/
+scripts/banned.local.json
