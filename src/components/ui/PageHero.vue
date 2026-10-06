@@ -9,9 +9,8 @@
     </div>
     <div class="visual">
       <div v-if="label" class="label"><CrossMark class="label-cm" /><span>{{ label }}</span></div>
-      <HeroImage :src="image" :alt="imageAlt" />
+      <HeroImage :src="image" :alt="imageAlt" :photo="photo" />
     </div>
-    <SideIndex class="side" :active="active" />
   </section>
 </template>
 
@@ -20,17 +19,16 @@ import CrossMark from './CrossMark.vue'
 import Eyebrow from './Eyebrow.vue'
 import DisplayTitle from './DisplayTitle.vue'
 import HeroImage from './HeroImage.vue'
-import SideIndex from '@/components/layout/SideIndex.vue'
 import { fitTitle } from '@/composables/fitTitle'
 
-withDefaults(defineProps<{ eyebrow: string; title: string; subtitle?: string; image: string; imageAlt: string; label?: string; active?: number }>(), { active: 0 })
+defineProps<{ eyebrow: string; title: string; subtitle?: string; image: string; imageAlt: string; label?: string; photo?: boolean }>()
 </script>
 
 <style scoped>
 .page-hero {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr) 70px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: var(--space-5);
   padding-block: 36px 34px;
   align-items: start;
@@ -73,12 +71,9 @@ withDefaults(defineProps<{ eyebrow: string; title: string; subtitle?: string; im
 .label-cm {
   position: relative;
 }
-.side {
-  margin-top: 40px;
-}
 @media (max-width: 1180px) {
   .page-hero { grid-template-columns: 1fr; }
-  .side, .cm { display: none; }
+  .cm { display: none; }
   .visual { max-width: 760px; }
 }
 @media (max-width: 640px) {

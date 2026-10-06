@@ -1,11 +1,7 @@
 <template>
   <q-page>
     <div class="container">
-      <PageHero :eyebrow="t('common.eyebrow')" :title="t('contact.title')" :image="heroImages.contact" :image-alt="t('contact.title')" :active="4">
-        <div class="nick">{{ pick(profile.alias) }}</div>
-        <div class="role">{{ pick(profile.title) }}</div>
-        <div class="field">{{ pick(profile.field) }}</div>
-        <p class="lead">{{ pick(profile.intro) }}</p>
+      <PageHero :eyebrow="t('common.eyebrow')" :title="t('contact.title')" :image="heroImages.contactPage" photo :image-alt="t('contact.title')">
         <p class="welcome">{{ t('contact.welcome') }}</p>
         <div class="btns">
           <a class="btn primary" :href="`mailto:${profile.email}`">{{ t('contact.sendEmail') }}<q-icon :name="mdiArrowRight" size="18px" /></a>
@@ -90,27 +86,6 @@ useMeta(() => ({ title: `${t('pages.contact')}｜${pick(profile.name)}` }))
 <style scoped>
 section {
   padding-bottom: var(--space-6);
-}
-.nick {
-  font: 400 clamp(18px, 4.2cqi, 24px) var(--font-sans);
-  color: var(--ink-2);
-}
-.role {
-  font: 600 clamp(22px, 5cqi, 30px) / 1.25 var(--font-sans);
-  margin-top: 16px;
-}
-.field {
-  font: 400 clamp(14px, 3.1cqi, 18px) var(--font-sans);
-  color: var(--ink-2);
-  margin-top: 6px;
-}
-.lead {
-  text-wrap: pretty;
-  font: 400 15px / 1.95 var(--font-tc);
-  margin: 18px 0 8px;
-  padding-left: 14px;
-  border-left: 2px solid var(--accent);
-  max-width: 30em;
 }
 .welcome {
   margin: 0 0 22px;

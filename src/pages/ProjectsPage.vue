@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="container">
-      <PageHero :eyebrow="t('common.eyebrow')" :title="t('projects.title')" :subtitle="t('projects.subtitle')" :image="heroImages.projects" :image-alt="t('projects.title')" :label="t('projects.label')" :active="0" />
+      <PageHero :eyebrow="t('common.eyebrow')" :title="t('projects.title')" :subtitle="t('projects.subtitle')" :image="heroImages.projectsPage" :image-alt="t('projects.title')" :label="t('projects.label')" />
 
       <div class="bar">
         <div class="filters" role="tablist">

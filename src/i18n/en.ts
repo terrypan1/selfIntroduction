@@ -53,7 +53,7 @@ export default {
     readCase: 'Read case study',
   },
   projects: {
-    title: 'SELECTED PROJECTS',
+    title: 'PROJECTS',
     subtitle: 'Industrial automation, robotics, AI vision, and software systems.',
     label: 'CASE STUDY INDEX / 2026',
     filters: { all: 'All', agv: 'AGV / ROS', ai: 'AI / Vision', system: 'Web / IoT' },

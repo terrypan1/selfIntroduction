@@ -51,7 +51,7 @@ export default {
     readCase: '看完整案例',
   },
   projects: {
-    title: '精選專案',
+    title: '專案作品',
     subtitle: '工業自動化、機器人、AI 視覺與軟體系統。',
     label: '案例索引 / 2026',
     filters: { all: '全部', agv: 'AGV / ROS', ai: 'AI 視覺', system: 'Web / IoT' },

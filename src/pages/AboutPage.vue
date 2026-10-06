@@ -1,11 +1,8 @@
 <template>
   <q-page>
     <div class="container">
-      <PageHero :eyebrow="t('common.eyebrow')" :title="t('about.title')" :subtitle="t('about.subtitle')" :image="heroImages.about" :image-alt="t('about.title')" :active="1">
-        <div class="who"><b>{{ pick(profile.display) }}</b> <span>{{ pick(profile.alias) }}</span></div>
-        <div class="role">{{ pick(profile.title) }}</div>
-        <div class="field">{{ pick(profile.field) }}</div>
-        <p class="lead">{{ pick(profile.intro) }}</p>
+      <PageHero :eyebrow="t('common.eyebrow')" :title="t('about.title')" :subtitle="t('about.subtitle')" :image="heroImages.aboutPage" photo :image-alt="t('about.title')">
+        <p class="lead">{{ t('home.aboutText') }}</p>
         <div class="btns">
           <SiteButton to="/projects" arrow>{{ t('common.viewProjects') }}</SiteButton>
           <SiteButton to="/contact" variant="ghost">{{ t('common.contactMe') }}</SiteButton>
@@ -106,23 +103,6 @@ useMeta(() => ({ title: `${t('pages.about')}｜${pick(profile.name)}` }))
 <style scoped>
 section {
   padding-bottom: var(--space-6);
-}
-.who b {
-  font: 700 clamp(20px, 4.6cqi, 26px) var(--font-sans);
-  letter-spacing: 0.04em;
-}
-.who span {
-  font: 400 clamp(18px, 4cqi, 22px) var(--font-sans);
-  color: var(--ink-2);
-}
-.role {
-  font: 500 clamp(18px, 4.4cqi, 24px) var(--font-sans);
-  margin-top: 4px;
-}
-.field {
-  font: 400 clamp(13px, 3cqi, 17px) var(--font-sans);
-  color: var(--ink-2);
-  margin-top: 4px;
 }
 .lead {
   text-wrap: pretty;

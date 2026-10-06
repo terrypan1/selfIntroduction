@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="container">
-      <PageHero :eyebrow="t('experience.tagline')" :title="t('experience.title')" :subtitle="t('experience.subtitle')" :image="heroImages.experience" :image-alt="t('experience.title')" :active="2" />
+      <PageHero :eyebrow="t('experience.tagline')" :title="t('experience.title')" :subtitle="t('experience.subtitle')" :image="heroImages.experience" :image-alt="t('experience.title')" />
 
       <div class="cols">
         <section class="block">
